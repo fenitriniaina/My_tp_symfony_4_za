@@ -1,0 +1,11 @@
+
+
+/*The error actually says you should alias that class to an existing service. That happens when Symfony does not know which implementation of interface you are going to use.
+
+Try something like this:
+
+Doctrine\Common\Persistence\ObjectManager: '@doctrine.orm.default_entity_manager'
+
+Add it in services.yml and try.*/
+
+docs: https://symfony.com/doc/current/service_container/autowiring.html#using-aliases-to-enable-autowiring 
